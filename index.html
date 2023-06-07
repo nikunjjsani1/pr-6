@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="d1"></p>
+    <p id="d2"></p>
+    <p id="d3"></p>
+    <p id="d4"></p>
+
+    <script>
+
+        function Person(first, last, age, work) {
+
+            this.firstName = first;
+            this.lastname = last;
+            this.age = age;
+            this.course = work;
+        }
+
+
+        let Person1 = prompt("Enter Your First name :- ");
+        let Person2 = prompt("Enter Your Last name :-");
+        let Person3 = prompt("Enter Your Age :-");
+        let Person4 = prompt("Enter Your work :-");
+
+        myStu1 = new Person("first", "last", "age", "work");
+
+        document.getElementById("d1").innerHTML = ("First Name :-" + Person1 )
+        document.getElementById("d2").innerHTML = ("Last Name :-" + Person2)
+        document.getElementById("d3").innerHTML = ("Age :-" + Person3)
+        document.getElementById("d4").innerHTML = ("work :-" + Person4)
+
+    </script>
+
+</body>
+
+</html>
